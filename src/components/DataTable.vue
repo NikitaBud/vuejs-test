@@ -3,9 +3,9 @@
     <div class="data-table__filter">
       <ui-money v-model="moneyFilter" />
     </div>
-
-    <!-- Your component code here -->
-
+    <div class="data-table__wrapper">
+      <ui-table />
+    </div>
     <div class="data-table__paginator">
       <ui-pagination
         v-model="page"
@@ -19,7 +19,6 @@
 export default {
 
   name: 'DataTable',
-
   props: {
     rows: {
       type: Array,
